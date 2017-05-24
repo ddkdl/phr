@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyHealthC Login</title>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <!-- Custom Stylesheet -->
+    <style type="text/css" media="screen">
+      body {
+        background-color: #102434;
+      	background: url("../images/photo_bg.jpg") no-repeat center center fixed;
+      	background-size: cover;
+      	font-size: 16px;
+      	font-family: 'Lato', sans-serif;
+      	font-weight: 300;
+      	margin: 0;
+      	color: #102434;
+      }
+
+      /* Typography */
+      h1#title {
+      	font-family: 'Roboto Slab', serif;
+      	font-weight: 300;
+      	font-size: 3.2em;
+      	color: white;
+      	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+      	margin: 0 auto;
+      	max-width: 300px;
+      	text-align: center;
+      	position: relative;
+      	top: 0px;
+      }
+
+      h1#title span span {
+      	font-weight: 400;
+      }
+
+      h2 {
+      	text-transform: uppercase;
+      	color: white;
+      	font-weight: 400;
+      	letter-spacing: 1px;
+      	font-size: 1.4em;
+      	line-height: 2.8em;
+      }
+
+      a {
+      	text-decoration: none;
+      	color: #666;
+      }
+
+      a:hover {
+      	color: #aeaeae;
+      }
+
+      p.small {
+      	font-size: 0.8em;
+      	margin: 20px 0 0;
+        color: #102434;
+      }
+
+      div.Username{
+          font-size: 5em;
+          color: #102434;
+      }
+
+      div.Password{
+          color: #102434;
+      }
+
+      div.loginbox{
+        background-color: white;/*E2E3F5*/
+        max-width: 340px;
+        margin: 0 100px;
+        position: relative;
+        left: 10px;
+        top: 80px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+        text-align: center;
+        color: #102434;
+      }
+
+      /* Layout */
+      .container {
+      	margin: 0;
+      }
+
+      div.header {
+        background-color: #C8D7EA;
+      }
+
+      div.footer{
+        background-color: #C8D7EA;
+        position: relative;
+        top: 400px;
+      }
+
+      .selected {
+      	color: #C8D7EA!important;
+      	transition: 0.5s;
+      }
+    </style>
+
+
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="title" class="hidden"><span id="logo">My<span><i>Health</i></span>C</span></h1>
+  </div>
+  <div class="loginbox">
+    <div class="Username">
+        <form method="POST"><input type="text" name="Username" id="username" value="Username">
+    </div>
+        <br />
+    <div class="Password">
+        <input type="text" name="Password" id="password" value="Password">
+    </div>
+        <input type="submit" onclick="Click()" class="small" name="SignIn" value="Sign In"></p></button></form>
+        <br />
+        <a href="#"><p class="small">Forgot your password?</p></a>
+        <a href="#"><p class="small">New User</p></a>
+  </div>
+
+    <!--<script src="JavaScript1.js">-->
+    <script>
+        var form = document.getElementById('file-form');
+        var fileSelect = document.getElementById('file-select');
+        var uploadButton = document.getElementById('upload-button');
+
+        form.onsubmit = function (event) {
+            event.preventDefault();
+
+            // Update button text.
+            uploadButton.innerHTML = 'Uploading...';
+
+            // The rest of the code will go here...
+        }
+    </script>
+</body>
+
+</html>
